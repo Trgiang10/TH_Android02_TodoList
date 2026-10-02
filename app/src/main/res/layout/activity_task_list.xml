@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Văn A - MSV: 12345"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công việc hôm nay"
+            android:textSize="18sp"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnAddAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Thêm hành động"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/layoutTodayTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Công việc sắp tới -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Công việc sắp tới"
+            android:textSize="18sp"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/layoutUpcomingTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

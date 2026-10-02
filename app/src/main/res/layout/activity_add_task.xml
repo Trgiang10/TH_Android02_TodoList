@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THÊM MỚI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên công việc"/>
+
+    <EditText
+        android:id="@+id/edtTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thời gian hoàn thành"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTaskNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ghi chú"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại công việc:"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hôm nay"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbUpcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sắp tới"
+            android:layout_marginLeft="16dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

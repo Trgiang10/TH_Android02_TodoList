@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_Cong_Viec"
+        tools:targetApi="31">
+
+        <!-- MÀN HÌNH 1: Đăng nhập (Màn hình chạy đầu tiên) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MÀN HÌNH 2 & 3: Phải khai báo thì mới chuyển trang được -->
+        <activity android:name=".TaskListActivity" />
+        <activity android:name=".AddTaskActivity" />
+
+    </application>
+
+</manifest>
